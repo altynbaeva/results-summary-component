@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,30 +20,49 @@
   </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
+<article class="test">
+  <div class="result">
+    <p class ="card-title">
+    Your Result
+    </p>
+    <span class="test-result">
+      <h1 class="strong-result">76</h1>
+      <p class="text">of 100</p>
+    </span>
+    <h2 class="header">
+    Great
+    </h2>
+    <p class="text">
+    You scored higher than 65% of the people who have taken these tests.
+    </p>
+  </div>
+  <div class="detailed-result">
+    <h3 class="summary-header">Summary</h3>
+    <ul class="result-list">
+      <li class="result-element">
+      Reaction
+      <strong class="strong">80</strong> / 100
+      </li>
+      <li class="result-element">
+      Memory
+      <strong class="strong">92</strong> / 100
+      </li>
+      <li class="result-element">
+      Verbal
+      <strong class="strong">61</strong> / 100
+      </li>
+      <li class="result-element">
+      Visual
+      <strong class="strong">73</strong> / 100
+      </li>
+    </ul>
+    <button class="continue-button">
+      <p class="continue">
+    Continue
+      </p>
+    </button>
+  </div>
+  </article>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
