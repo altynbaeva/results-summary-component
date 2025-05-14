@@ -12,12 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <article class="test">
@@ -28,7 +22,7 @@
       </p>
       <span class="test-result">
         <h1 class="strong-result">76</h1>
-        <p class="text">of 100</p>
+        <p class="circle-text">of 100</p>
       </span>
       <h2 class="header">
       Great
@@ -40,25 +34,31 @@
     <div class="detailed-result">
       <h3 class="summary-header">Summary</h3>
       <ul class="result-list">
-        <li class="result-element r">
+        <li class="result-element reaction">
           <span class="img-span red"><img class="img-icon" src="assets/images/icon-reaction.svg" width="15" height="15" alt="icon">
         Reaction</span>
           <span class="span"><strong class="strong">80</strong> / 100</span>
         </li>
-        <li class="result-element y">
-          <span class="img-span yellow"><img class="img-icon" src="assets/images/icon-memory.svg" width="15" height="15" alt="icon">
-        Memory</span>
-        <span class="span"><strong class="strong">92</strong> / 100</span>
+        <li class="result-element memory">
+          <div class="img-div yellow">
+            <img class="img-icon" src="assets/images/icon-memory.svg" width="15" height="15" alt="icon">
+            <span>Memory</span>
+          </div>
+          <span class="span"><strong class="strong">92</strong> / 100</span>
         </li>
-        <li class="result-element g">
-          <span class="img-span green"><img class="img-icon" src="assets/images/icon-verbal.svg" width="15" height="15" alt="icon">
-        Verbal</span>
-        <span class="span"><strong class="strong">61</strong> / 100</span>
+        <li class="result-element verbal">
+          <div class="img-div green">
+            <img class="img-icon" src="assets/images/icon-verbal.svg" width="15" height="15" alt="icon">
+            <span>Verbal</span>
+          </div>
+          <span class="span"><strong class="strong">61</strong> / 100</span>
         </li>
-        <li class="result-element b">
-          <span class="img-span blue"><img class="img-icon" src="assets/images/icon-visual.svg" width="15" height="15" alt="icon">
-        Visual</span>
-        <span class="span"><strong class="strong">73</strong> / 100</span>
+        <li class="result-element visual">
+          <div class="img-div blue">
+            <img class="img-icon" src="assets/images/icon-visual.svg" width="15" height="15" alt="icon">
+            <span>Visual</span>
+          </div>
+          <span class="span"><strong class="strong">73</strong> / 100</span>
         </li>
       </ul>
       <button class="continue-button">
